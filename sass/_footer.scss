@@ -12,6 +12,14 @@
     grid-gap: 2rem;
     align-items: center;
 
+    @media only screen and (max-width: $bp-large) {            
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-medium) {            
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     &__link:link,
     &__link:visited {
         font-size: 1.4rem;
